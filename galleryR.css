@@ -1,0 +1,67 @@
+/* Hover effect for image scaling */
+.gallery-item img {
+    transition: transform 0.4s ease-in-out;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.4);
+}
+
+figure {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.masonry-grid {
+    column-count: 4; 
+    column-gap: 20px; 
+}
+
+.gallery-item {
+    break-inside: avoid;
+    margin-bottom: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    /* Adjust for tablets and smaller laptops */
+    .masonry-grid {
+        column-count: 3; 
+    }
+
+    .gallery-item {
+        margin-bottom: 15px;
+    }
+
+    .nav {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjust for mobile devices */
+    .masonry-grid {
+        column-count: 2; 
+    }
+
+    .nav {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* For smaller mobile devices */
+    .masonry-grid {
+        column-count: 1; 
+    }
+
+    .nav {
+        font-size: 0.7rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .gallery-item {
+        margin-bottom: 10px;
+    }
+}

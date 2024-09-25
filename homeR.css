@@ -1,0 +1,92 @@
+
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    nav button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Profile-Page h1 {
+        font-size: 2.5rem;
+    }
+
+    .Profile-Page button {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .right {
+        gap: 4px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Profile-Page h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    nav button {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .right {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .Profile-Page {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .Profile-Page button {
+        padding: 8px 12px;
+        font-size: 1rem;
+    }
+
+    .Profile-Page h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Profile-Page h1 {
+        font-size: 1.25rem;
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    .right {
+        gap: 4px;
+        padding: 5px;
+    }
+
+    .nav {
+        font-size: 0.8rem;
+    }
+
+    .Profile-Page button {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 0.875rem;
+    }
+}

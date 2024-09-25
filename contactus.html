@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body class="font-primary bg-body relative min-h-screen">
+    <nav class="flex justify-between pl-10 pr-10 items-center">
+        <div class="m-auto mt-4">
+            <div class="mt-2 nav flex gap-4 justify-between px-7 py-1 left-1/2" style="color :#D4D4D4">
+                <h6><a href="./index.html" class="flex flex-col items-center"><span class="under">Home</span></a></h6>
+                <h6><a href="./gallery.html" class="flex flex-col items-center"><span class="under">Gallery</span></a></h6>
+                <h6><a href="./projects.html" class="flex flex-col items-center"><span class="under">Projects</span></a></h6>
+                <h6><a href="./skills.html" aria-label="Skills" class="flex flex-col items-center"><span class="under">Skills</span></a></h6>
+                <h6><a href="./goals.html" aria-label="Skills" class="flex flex-col items-center"><span class="under">Goals</span></a></h6>
+                <h6><a href="./contactus.html" aria-label="Skills" class="flex flex-col items-center"><span class="under">Contact Us</span></a></h6>
+            </div>
+            <div class="mt-1 w-100 rounded-full" style="background-color:#D4D4D4; padding: 1px;"></div>
+        </div>
+    </nav>
+        
+    
+    <div class="container mx-auto p-6 lg:p-12">
+        <!-- Contact Us Section -->
+        <section class="mb-12">
+            <header class="text-center mb-8">
+                <h1 class="text-4xl font-bold text-gray-100 text-gradient">Contact Us</h1>
+            </header>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Contact Form -->
+                <div class=" p-6 rounded-lg shadow-lg" style="background-color: #1D1D1D;">
+                    <h2 class="text-2xl font-semibold text-white mb-4">Get In Touch</h2>
+
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block mb-2 text-gray-400">Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full p-3 text-gray-200 rounded-md focus:ring-2 focus:ring-grey focus:outline-none" style="background-color: #2A2A2A;">
+                        </div>
+
+                        <div>
+                            <label for="email" class="block mb-2 text-gray-400">Email</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full p-3 bg-gray-700 text-gray-200 rounded-md focus:ring-2 focus:ring-grey focus:outline-none" style="background-color: #2A2A2A;">
+                        </div>
+
+                        <div>
+                            <label for="subject" class="block mb-2 text-gray-400">Subject</label>
+                            <input type="text" id="subject" name="subject"
+                                class="w-full p-3 bg-gray-700 text-gray-200 rounded-md focus:ring-2 focus:ring-grey focus:outline-none" style="background-color: #2A2A2A;">
+                        </div>
+
+                        <div>
+                            <label for="message" class="block mb-2 text-gray-400">Message</label>
+                            <textarea id="message" name="message" rows="4" required
+                                class="w-full p-3 bg-gray-700 text-gray-200 rounded-md focus:ring-2 focus:ring-grey focus:outline-none" 
+                                style="background-color: #2A2A2A;"></textarea>
+                        </div>
+
+                        <div>
+                            <button type="submit"
+                                class="w-full bg-black text-white font-bold py-3 px-4 rounded-md hover:bg-black-700 transition duration-300">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class=" p-6 rounded-lg shadow-lg" style="background-color: #1D1D1D;">
+                    <h2 class="text-2xl font-semibold text-white mb-4">Contact Information</h2>
+                    <p class="text-lg text-gray-300 mb-6">Feel free to reach out to me via email or phone:</p>
+
+                    <div class="mb-4">
+                        <h3 class="text-xl font-semibold text-white">Email</h3>
+                        <p class="text-gray-400">yourname@example.com</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-white">Phone</h3>
+                        <p class="text-gray-400">+123 456 7890</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+</body>
+
+</html>

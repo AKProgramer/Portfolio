@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="galleryR.css">
+    <style>
+        /* Hover effect for image scaling */
+        .gallery-item img {
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.4);
+        }
+
+    
+        figure {
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+      
+        .masonry-grid {
+            column-count: 4; 
+            column-gap: 20px; 
+        }
+
+        .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body class="font-primary min-h-screen">
+    <nav class="flex justify-between pl-10 pr-10 items-center">
+        <div class="m-auto mt-4">
+            <div class="mt-2 nav flex gap-4 justify-between px-7 py-1 left-1/2" style="color :#D4D4D4">
+                <h6><a href="./index.html" class="flex flex-col items-center"><span class="under">Home</span></a></h6>
+                <h6><a href="./gallery.html" class="flex flex-col items-center"><span class="under">Gallery</span></a></h6>
+                <h6><a href="./projects.html" class="flex flex-col items-center"><span class="under">Projects</span></a></h6>
+                <h6><a href="./skills.html" aria-label="Skills" class="flex flex-col items-center"><span class="under">Skills</span></a></h6>
+                <h6><a href="./goals.html" aria-label="Skills" class="flex flex-col items-center"><span class="under">Goals</span></a></h6>
+                <h6><a href="./contactus.html" aria-label="Skills" class="flex flex-col items-center"><span class="under">Contact Us</span></a></h6>
+            </div>
+            <div class="mt-1 w-100 rounded-full" style="background-color:#D4D4D4; padding: 1px;"></div>
+        </div>
+    </nav>
+    <section class="w-full flex flex-col justify-center items-center px-5 lg:px-20 mb-24 mt-8">
+        <div class="masonry-grid">
+            <figure class="gallery-item cursor-pointer border-2 border-white">
+                <img src="https://images.unsplash.com/photo-1662288815558-fc42fe209b2b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Beautiful Landscape" class="w-full h-auto">
+                <figcaption class="text-center mt-2">Beautiful Landscape</figcaption>
+            </figure>
+
+            <figure class="gallery-item cursor-pointer border-2 border-white">
+                <img src="https://images.unsplash.com/photo-1621274147744-cfb5694bb233?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="City Skyline" class="w-full h-auto">
+                <figcaption class="text-center mt-2">City Skyline at Dusk</figcaption>
+            </figure>
+
+            <figure class="gallery-item cursor-pointer border-2 border-white">
+                <img src="https://images.unsplash.com/photo-1618119761162-755258002f90?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mountain Range" class="w-full h-auto">
+                <figcaption class="text-center mt-2">Snow-Capped Mountains</figcaption>
+            </figure>
+            <figure class="gallery-item cursor-pointer border-2 border-white">
+                <img src="https://images.unsplash.com/photo-1662288815558-fc42fe209b2b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Beautiful Landscape" class="w-full h-auto">
+                <figcaption class="text-center mt-2">Beautiful Landscape</figcaption>
+            </figure>
+
+            <figure class="gallery-item cursor-pointer border-2 border-white">
+                <img src="https://images.unsplash.com/photo-1621274147744-cfb5694bb233?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="City Skyline" class="w-full h-auto">
+                <figcaption class="text-center mt-2">City Skyline at Dusk</figcaption>
+            </figure>
+            <figure class="gallery-item cursor-pointer border-2 border-white">
+                <img src="https://i.pinimg.com/236x/38/ec/33/38ec33dcc214c24122e30f2194d73bb1.jpg" alt="City Skyline" class="w-full h-auto">
+                <figcaption class="text-center mt-2">City Skyline at Dusk</figcaption>
+            </figure>
+            <figure class="gallery-item cursor-pointer border-2 border-white">
+                <img src=" https://i.pinimg.com/474x/aa/1f/ee/aa1fee1544bbe0c4b652a32fe7ee9b5b.jpg" alt="City Skyline" class="w-full h-auto">
+                <figcaption class="text-center mt-2">City Skyline at Dusk</figcaption>
+            </figure>
+           
+
+        </div>
+    </section>
+</body>
+</html>
